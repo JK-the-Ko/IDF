@@ -1,0 +1,20 @@
+dataset:
+  target: idf.datasets.image_dataset.PairedDataset
+  params:
+    dataroot: dataset_root_path/test/synthetic/monte_carlo
+    patch_size: ~ 
+    preload: False
+    parallel_preload: False
+    augmentation: False
+    test: True
+    lq_folder: samples_64
+    gt_folder: clean
+
+data_loader:
+  batch_size: 1
+  shuffle: false
+  num_workers: 8
+  drop_last: false
+
+batch_transform:
+  target: datasets.batch_transform.IdentityBatchTransform

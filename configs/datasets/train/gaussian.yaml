@@ -1,0 +1,28 @@
+# Gaussian noise training dataset configuration.
+
+dataset:
+  target: idf.datasets.gaussian.GaussianDataset   # Dataset class.
+  params:
+    dataroot: dataset_root_path/train/CBSD432     # Root directory of clean training images.
+    
+    noise_level: [15, 15]                         # Inclusive range [min, max] of sigma for AWGN.
+    channel_wise_noise: False                     # If True, sample independent sigma per RGB channel.
+    
+    patch_size: 128                               # Spatial crop size (square patches: patch_size x patch_size).
+    augmentation: True                            # Apply on-the-fly geometric augmentations.
+    test: False                                   # Set True to disable training-only randomizations.
+
+    preload: False                                # If True, preload all images into RAM at initialization.
+    parallel_preload: False                       # If True and preload=True, use multiprocessing for faster preload.
+
+data_loader:
+  batch_size: 8
+  shuffle: true
+  num_workers: 16
+  drop_last: true
+
+repeat_dataset:
+  times: 10000
+
+batch_transform:
+  target: idf.datasets.batch_transform.IdentityBatchTransform

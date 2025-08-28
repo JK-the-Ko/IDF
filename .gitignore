@@ -205,3 +205,10 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# logger files
+logs
+LocalImageLogger
+
+@eaDir
+thumbs.db

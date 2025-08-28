@@ -1,0 +1,18 @@
+dataset:
+  target: idf.datasets.siddplus.SIDDPlusDataset
+  params:
+    dataroot: dataset_root_path/test/real/siddplus
+    patch_size: ~
+    preload: False
+    parallel_preload: False
+    augmentation: False
+    test: True
+
+data_loader:
+  batch_size: 1
+  shuffle: false
+  num_workers: 8
+  drop_last: false
+
+batch_transform:
+  target: idf.datasets.batch_transform.IdentityBatchTransform

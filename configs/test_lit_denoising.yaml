@@ -1,0 +1,36 @@
+data:
+  target: idf.datasets.data_module.BaseDataModule
+  params:
+    # Path to training dataset configuration.
+    train_config: configs/datasets/train/gaussian.yaml
+
+    # List of validation dataset configuration files. Add or remove as needed.
+    # Match entries in data_config/validate of configs/models/idfnet.yaml
+    val_config: [
+      configs/datasets/test/synthetic.yaml,
+    ]
+
+    # Additional real-world validation datasets (uncomment to enable):
+    # [
+    #  'configs/datasets/test/sidd.yaml',
+    #  'configs/datasets/test/siddplus.yaml',
+    #  'configs/datasets/test/polyu.yaml',
+    #  'configs/datasets/test/nam.yaml',
+    #  'configs/datasets/test/mc.yaml',
+    # ]
+
+model:
+  # Path to model (architecture + optimization) configuration.
+  config: configs/models/idfnet.yaml
+
+  # Path to checkpoint for resuming training. Use ~ for fresh start.
+  resume: pretrained_models/idf_g_15.ckpt
+
+lightning:
+  seed: 123
+  mode: validate
+  
+  trainer:
+    accelerator: auto              # Automatically select CPU / GPU / MPS.
+    precision: 32                  # Numerical precision: 32 | 16-mixed | bf16-mixed.
+    devices: [0]                   # GPU indices to use.
