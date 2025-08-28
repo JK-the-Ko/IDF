@@ -10,21 +10,13 @@
 
 <b><sub><sup>* Equal contribution.  <sup>&#8224;</sup> Corresponding author.</sup></sub></b>
 
-<a href="https://arxiv.org/abs/2508.19649" target="_blank">
-  <img src="https://img.shields.io/badge/Arxiv-📄Paper-8A2BE2" alt="Arxiv" />
-</a>
+[![arXiv](https://img.shields.io/badge/Arxiv-📄Paper-8A2BE2)](https://arxiv.org/abs/2508.19649)
 &nbsp;
-<a href="https://dongjinkim9.github.io/projects/idf/" target="_blank">
-  <img src="https://img.shields.io/badge/Project-📖Page-8A2BE2" alt="Project Page" />
-</a>
+[![Project_page](https://img.shields.io/badge/Project-📖Page-8A2BE2)](https://dongjinkim9.github.io/projects/idf)
 &nbsp;
-<a href="https://huggingface.co/spaces/dongjin-kim/IDF" target="_blank">
-  <img src="https://img.shields.io/badge/Demo-%F0%9F%A4%97%20Hugging%20Face-8A2BE2" alt="Hugging Face" />
-</a>
+[![Hugging_Face](https://img.shields.io/badge/Demo-%F0%9F%A4%97%20Hugging%20Face-8A2BE2)](https://huggingface.co/spaces/dongjin-kim/IDF)
 &nbsp;
-<a href="https://colab.research.google.com/drive/1bzhrkVPS8iiOZy1fANJIOu15C2obN5B2?usp=sharing" target="_blank">
-  <img src="https://img.shields.io/badge/Demo-♾️Colab-8A2BE2" alt="Colab" />
-</a>
+[![Colab](https://img.shields.io/badge/Demo-♾️Colab-8A2BE2)](https://colab.research.google.com/drive/1bzhrkVPS8iiOZy1fANJIOu15C2obN5B2?usp=sharing)
 
 </div>
 
@@ -52,13 +44,9 @@ pip install -r requirements.txt
 ## 🚀 Demo
 You can try IDF in several ways:
 
-- Hugging Face: <a href="https://huggingface.co/spaces/dongjin-kim/IDF" target="_blank">
-  <img src="https://img.shields.io/badge/Demo-%F0%9F%A4%97%20Hugging%20Face-8A2BE2" alt="Hugging Face" />
-</a>
+- Hugging Face: [![Hugging_Face](https://img.shields.io/badge/Demo-%F0%9F%A4%97%20Hugging%20Face-8A2BE2)](https://huggingface.co/spaces/dongjin-kim/IDF)
 
-- Colab:<a href="https://colab.research.google.com/drive/1bzhrkVPS8iiOZy1fANJIOu15C2obN5B2?usp=sharing" target="_blank">
-  <img src="https://img.shields.io/badge/Demo-♾️Colab-8A2BE2" alt="Colab" />
-</a>
+- Colab: [![Colab](https://img.shields.io/badge/Demo-♾️Colab-8A2BE2)](https://colab.research.google.com/drive/1bzhrkVPS8iiOZy1fANJIOu15C2obN5B2?usp=sharing)
 
 - Local (Python script):
 ```bash
@@ -118,10 +106,8 @@ For detailed options related to training, datasets, and the model settings, plea
 * **Model:** `configs/models/idfnet.yaml`
 
 ## 🎇 Results
-Full qualitative comparisons are available on the project page:
-<a href="https://dongjinkim9.github.io/projects/idf/" target="_blank">
-  <img src="https://img.shields.io/badge/Project-📄Page-8A2BE2" alt="Project Page" />
-</a>
+Full qualitative comparisons are available on the project page: 
+[![Project_page](https://img.shields.io/badge/Project-📖Page-8A2BE2)](https://dongjinkim9.github.io/projects/idf)
 
 ### 🧪 Synthetic Noise
 <p align="center">
