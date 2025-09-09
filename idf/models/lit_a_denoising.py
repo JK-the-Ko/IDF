@@ -99,9 +99,6 @@ class LitADenoising(LitDenoising):
                     alpha_schedule=self.misc_config.get('alpha_schedule'))
         
         pred = torch.clamp(pred, 0.0, 1.0)
-
-        x = self.normalize(x, reverse=True)
-        y = self.normalize(y, reverse=True)
         
         # Evaluate metrics.
         losses = {}
